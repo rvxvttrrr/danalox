@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    position: relative; /* Добавляем это для корректного позиционирования гифки */
+}
+
+.question-container {
+    text-align: center;
+    position: absolute; /* Переключаемся на абсолютное позиционирование */
+    top: 0; /* Размещаем надпись в верхней части экрана */
+    left: 50%; /* Размещаем надпись в центре горизонтально */
+    transform: translateX(-50%); /* Центрируем надпись по горизонтали */
+    z-index: 2; /* Устанавливаем более высокий z-index для надписи */
+}
+
+.button-container {
+    position: absolute; /* Переключаемся на абсолютное позиционирование */
+    bottom: 10px; /* Размещаем контейнер с кнопками в нижней части экрана с небольшим отступом */
+    left: 50%; /* Размещаем контейнер с кнопками в центре горизонтально */
+    transform: translateX(-50%); /* Центрируем контейнер с кнопками по горизонтали */
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+}
+
+.moving-btn {
+    position: absolute;
+}
+
+.hearts-animation {
+    position: absolute;
+    top: 50%; /* Регулируем начальную позицию гифки */
+    left: 50%; /* Регулируем начальную позицию гифки */
+    transform: translate(-50%, -50%); /* Центрируем гифку по горизонтали и вертикали */
+    z-index: 0; /* Устанавливаем z-index ниже, чтобы гарантировать, что гифка будет на заднем плане */
+}
+
+body {
+    background-image: url(1612903827_59-p-krasnii-fon-s-serdechkami-dlya-fotoshopa-71.png); /* Устанавливаем изображение в качестве фона */
+    background-size: cover; /* Устанавливаем размер изображения */
+    background-position: center; /* Устанавливаем позицию изображения */
+}
